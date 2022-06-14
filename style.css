@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lato:ital,wght@0,400;0,700;1,900&display=swap");
+body {
+  margin: 0;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-weight: normal;
+}
+
+header {
+  background: rgba(66, 44, 3, 0.908);
+  height: 74px;
+  padding: 23px 16px;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+header .menuTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .leftHeader {
+  margin-bottom: 19px;
+}
+
+header .rightHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .rightHeader button {
+  width: 50px;
+}
+
+header .rightHeader .deleted {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  header .rightHeader .deleted {
+    display: inline;
+  }
+}
+
+header .topMenu {
+  list-style: none;
+  padding: 0;
+}
+
+header .topMenu .imgMenu {
+  width: 45px;
+}
+
+header li {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header li:hover .subMenu {
+  display: block;
+  padding-left: 10px;
+}
+
+header .subMenu {
+  position: absolute;
+  display: none;
+  background: #ffedef;
+  border: 1px solid rgba(112, 115, 133, 0.816);
+  border-radius: 3px;
+}
+
+header .subMenu > li {
+  min-width: 170px;
+}
+
+header .subMenu > li:hover {
+  background: white;
+  color: #4747f4;
+  width: 100%;
+  cursor: pointer;
+}
+
+header .cart-button {
+  border: none;
+  background: none;
+}
+
+header .cart-button img {
+  height: 40px;
+  width: 100%;
+  margin-top: -17px;
+}
+
+.container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1600px) {
+  .container {
+    margin: 0 auto;
+    width: 1140px;
+  }
+}
+
+.goods-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  row-gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .goods-list {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    row-gap: 18px;
+    -webkit-column-gap: 16px;
+            column-gap: 16px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .goods-list {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+
+.good-item .goodImg {
+  position: relative;
+  width: 300px;
+  height: 370px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.good-item .goodImg img {
+  width: 100%;
+  display: block;
+}
+
+.good-item .goodData {
+  padding: 23px 16px 20px;
+  background: rgba(38, 80, 2, 0.94);
+}
+
+.good-item .goodName {
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.good-item .goodText {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 12px;
+  margin-bottom: 18px;
+}
+
+.good-item .goodPrice {
+  font-size: 16px;
+  line-height: 19px;
+  color: #f1c36d;
+}
+/*# sourceMappingURL=style.css.map */
