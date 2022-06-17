@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lato:ital,wght@0,400;0,700;1,900&display=swap");
+body {
+  margin: 0;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-weight: normal;
+}
+
+.header {
+  background: #b4b0b0;
+  margin-top: 30px;
+  height: 74px;
+  padding: 23px 16px;
+}
+.header .menuTitle {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.header .leftHeader {
+  margin-bottom: 19px;
+}
+.header .rightHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.header .topMenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header a {
+  text-decoration: none;
+  display: block;
+  outline: none;
+}
+.header a:link {
+  color: inherit;
+}
+.header a:visited {
+  color: inherit;
+}
+.header a:hover {
+  color: #4747f4;
+}
+.header li {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+.header li:hover .subMenu {
+  display: block;
+  padding-left: 10px;
+}
+.header .subMenu {
+  position: absolute;
+  display: none;
+  background: #ffedef;
+  border: 1px solid rgba(112, 115, 133, 0.816);
+  border-radius: 3px;
+}
+.header .subMenu > li {
+  min-width: 170px;
+}
+.header .subMenu > li:hover {
+  background: white;
+  color: #4747f4;
+  width: 100%;
+  cursor: pointer;
+}
+.header .cart-button {
+  border: none;
+  background: none;
+}
+.header .cart-button img {
+  height: 40px;
+  width: 100%;
+  margin-top: -17px;
+}
+
+.container {
+  align-items: center;
+}
+@media (min-width: 1600px) {
+  .container {
+    margin: 0 auto;
+    width: 1140px;
+  }
+}
