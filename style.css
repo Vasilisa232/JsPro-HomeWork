@@ -80,6 +80,7 @@ header .subMenu {
   background: #ffedef;
   border: 1px solid rgba(112, 115, 133, 0.816);
   border-radius: 3px;
+  z-index: 2;
 }
 
 header .subMenu > li {
@@ -123,6 +124,7 @@ header .cart-button img {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   row-gap: 16px;
+  z-index: 1;
 }
 
 @media (min-width: 768px) {
