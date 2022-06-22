@@ -167,3 +167,40 @@ header {
       color: #f1c36d;
     }
   }
+
+  .fixed-area {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: aquamarine;
+
+    .basket-card {
+      width: 80%;
+      height: 80%;
+      background-color: aliceblue;
+      display: grid;
+      grid-template-columns: max-content auto;
+    }
+
+    .basket-card__header{
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: auto max-content;
+    }
+
+    .basket-card__content {
+      padding: 10px;
+    }
+
+    .basket-card__header__delete-icon {
+      background-image: url(img/closeicon.svg);
+      background-size: contain;
+      width: 30px;
+      height: 30px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  }
