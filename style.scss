@@ -23,7 +23,16 @@ header {
   }
 
   .leftHeader {
-    margin-bottom: 19px;
+    margin-bottom: 75px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+
+    .goods-search {
+        width: 300px;
+        height: 30px;
+        margin-left: 200px;
+    }
   }
 
   .rightHeader {
@@ -31,9 +40,21 @@ header {
     justify-content: space-between;
 
     & button {
-      width: 50px;
-    }
+      background: transparent;
+      border: none;
 
+      & img {
+        width: 60px;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    
+    .search-button {
+      padding-bottom: 70px;
+      color: white;
+    }
     .deleted {
       display: none;
 
@@ -181,8 +202,6 @@ header {
       width: 80%;
       height: 80%;
       background-color: aliceblue;
-      display: grid;
-      grid-template-columns: max-content auto;
     }
 
     .basket-card__header{

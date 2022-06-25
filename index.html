@@ -12,17 +12,14 @@
   <div id="root">
     <header> 
       <!-- <h1 class="title">kEttOn {{calculatePrice}}</h1> -->
-     <div class="search">
-      <input type="text" class="goods-search" v-model="searchValue"/>
-      <!-- <button class="search-button" type="button">Поиск</button> -->
-     </div>
+     
         
      <div class="container">
       <div class="menuTitle">
        <div class="leftHeader">
           
         <ul class="topMenu">
-          <li> <a href="#"><img class="imgMenu" src="img/kettleIcon.jpg"alt=""></a>{{calculatePrice}}</li>
+          <li> <a href="#"><img class="imgMenu" src="img/kettleIcon.jpg"alt=""></a></li>
          <li> <a href="#"><img class="imgMenu" src="img/catalog.jpg" alt=""></a>
          <ul class="subMenu">
           <li>Чайник</li>
@@ -30,10 +27,15 @@
          </ul>
          </li>
          <li> 
-            <!-- <input type="text" class="goods-search" />
-            <button class="search-button" type="button">Поиск</button> -->
+            <!-- <input type="text" class="goods-search" v-model="searchValue"/>
+            <custom-button>Поиск</custom-button> -->
          </li> 
         </ul>
+
+        <div class="search">
+          <custom-search v-model="searchValue"></custom-search>
+         </div>
+         
        </div>
     
        <div class="rightHeader">
@@ -42,7 +44,7 @@
           <li> <a href="#"><img class="imgMenu" src="img/orders.jpg" alt=""></a></li>
           <li> <a href="#"><img class="imgMenu" src="img/favorites.jpg" alt=""></a></li>
         </ul>
-        <button class="cart-button" type="button" @click="setVisibleCart"> <img src="img/cart.jpg" alt="cart"> Корзина </button>
+        <custom-button @click="setVisibleCart"> <img src="img/cart.jpg" alt="cart"> Корзина </custom-button>
        </div>
     
       </div>
@@ -52,24 +54,12 @@
           
     <main>
       <div class="goods-list container" v-if="filteredItems.length">
-        <div class="goods-item" v-for="item in filteredItems">
-         <h3>{{ item.product_name}} </h3>
-         <p>{{ item.price }}</p>
-        </div>
+        <good v-for="item in filteredItems" :item="item"></good>
       </div>
-      <div class="" v-else>нет данных</div>
+      <div v-else>нет данных</div>
     </main>
-
-    <div class="fixed-area" v-if="isVisibleCart">
-      <div class="basket-card">
-        <div class="basket-card__header">
-          <h1 class="basket-card__header__title">basket-card</h1>
-          <div class="basket-card__header__delete-icon" @click="setVisibleCart"></div></div>
-      </div>
-
-      <div class="basket-card__content">content
-      </div>
-    </div>
+    <basket v-if="isVisibleCart" @close="setVisibleCart"></basket>
+<!-- <div> {{calculatePrice}} </div> -->
   </div>
 </body>
 <script src="script.js"></script>
