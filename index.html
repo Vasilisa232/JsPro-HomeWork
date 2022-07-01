@@ -12,8 +12,7 @@
   <div id="root">
     <header> 
       <!-- <h1 class="title">kEttOn {{calculatePrice}}</h1> -->
-     
-        
+      
      <div class="container">
       <div class="menuTitle">
        <div class="leftHeader">
@@ -32,9 +31,7 @@
          </li> 
         </ul>
 
-        <div class="search">
-          <custom-search v-model="searchValue"></custom-search>
-         </div>
+        <custom-search v-model="searchValue"></custom-search>
          
        </div>
     
@@ -54,13 +51,16 @@
           
     <main>
       <div class="goods-list container" v-if="filteredItems.length">
-        <good v-for="item in filteredItems" :item="item"></good>
+        <goods-item v-for="item in filteredItems" :item="item"></goods-item>
       </div>
       <div v-else>нет данных</div>
     </main>
-    <basket v-if="isVisibleCart" @close="setVisibleCart"></basket>
+    <basket v-if="isVisibleCart" @close="setVisibleCart">
+      <basket-item></basket-item>
+    </basket>
 <!-- <div> {{calculatePrice}} </div> -->
   </div>
 </body>
 <script src="script.js"></script>
+
 </html>

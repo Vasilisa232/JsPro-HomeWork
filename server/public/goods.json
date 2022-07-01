@@ -1,0 +1,32 @@
+[
+    {
+        "id_product": 1,
+        "price": 45600,
+        "product_name": "Ноутбук"
+    },
+    {
+        "id_product": 2,
+        "price": 45600,
+        "product_name": "Ноутбук"
+    },
+    {
+        "id_product": 3,
+        "price": 45600,
+        "product_name": "Ноутбук"
+    },
+    {
+        "id_product": 4,
+        "price": 45600,
+        "product_name": "Ноутбук"
+    },
+    {
+        "id_product": 5,
+        "price": 45600,
+        "product_name": "Ноутбук"
+    },
+    {
+        "id_product": 6,
+        "price": 45600,
+        "product_name": "Ноутбук"
+    }
+]

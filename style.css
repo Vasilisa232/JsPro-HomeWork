@@ -263,4 +263,24 @@ header .cart-button img {
   margin: 10px;
   cursor: pointer;
 }
+
+.basket-item {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.basket-item__title {
+  font-weight: bold;
+}
+
+.basket-item__total {
+  margin-left: 100px;
+}
+
+.basket-item__count button {
+  padding: 0 5px;
+}
 /*# sourceMappingURL=style.css.map */

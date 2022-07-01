@@ -1,0 +1,22 @@
+{
+  "name": "jshw",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000J\u0000s\u0000P\u0000r\u0000o\u0000-\u0000H\u0000o\u0000m\u0000e\u0000W\u0000o\u0000r\u0000k\u0000\r\u0000 \u0000",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vasilisa232/JsPro-HomeWork.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vasilisa232/JsPro-HomeWork/issues"
+  },
+  "homepage": "https://github.com/Vasilisa232/JsPro-HomeWork#readme",
+  "dependencies": {
+    "webpack": "^5.73.0"
+  }
+}
