@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background: rgba(66, 44, 3, 0.908);
+    background: rgba(51, 134, 203, 0.57);
     height: 74px;
     padding: 23px 16px;
     
@@ -31,7 +31,16 @@ header {
     justify-content: space-between;
 
     & button {
-      width: 50px;
+      background: transparent;
+      border: none;
+      margin-bottom: 22px;
+      color: white;
+      filter: drop-shadow(10px -2px 1px black);
+
+      & img {
+        width: 50px;
+    display: flex;
+      }
     }
 
     .deleted {
@@ -49,6 +58,7 @@ header {
 
     .imgMenu {
       width: 45px;
+      filter: drop-shadow(10px -2px 7px black);
     }
   }
 
@@ -89,6 +99,7 @@ header {
   .cart-button {
     border: none;
     background: none;
+    color: white;
 
     & img {
       height: 40px;
@@ -181,8 +192,6 @@ header {
       width: 80%;
       height: 80%;
       background-color: aliceblue;
-      display: grid;
-      grid-template-columns: max-content auto;
     }
 
     .basket-card__header{
